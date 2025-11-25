@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gelila Manufacturing PLC - Industrial Sectors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF7A00",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-3">
+<div class="flex items-center gap-4 text-[#212121] dark:text-white">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#212121] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Gelila Manufacturing PLC</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#424242] dark:text-gray-300 text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-[#424242] dark:text-gray-300 text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Sectors</a>
+<a class="text-[#424242] dark:text-gray-300 text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+<div class="lg:hidden">
+<button class="flex items-center justify-center size-10 rounded-lg text-[#212121] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-10 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+<div class="flex flex-wrap justify-between gap-4 p-4">
+<div class="flex flex-col gap-3">
+<p class="text-[#212121] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Our Industrial Sectors</p>
+<p class="text-[#424242] dark:text-gray-400 text-base font-normal leading-normal">Explore our diverse range of high-quality products across multiple industries.</p>
+</div>
+</div>
+<div class="flex gap-2 sm:gap-3 p-3 overflow-x-auto w-full">
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 text-primary dark:bg-primary/30 dark:text-primary px-4">
+<p class="text-sm font-semibold leading-normal">Footwear</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-gray-800 text-[#424242] dark:text-gray-300 px-4">
+<p class="text-sm font-medium leading-normal">Sole &amp; Component</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-gray-800 text-[#424242] dark:text-gray-300 px-4">
+<p class="text-sm font-medium leading-normal">Bus Assembly</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-gray-800 text-[#424242] dark:text-gray-300 px-4">
+<p class="text-sm font-medium leading-normal">Food Complex</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gray-100 dark:bg-gray-800 text-[#424242] dark:text-gray-300 px-4">
+<p class="text-sm font-medium leading-normal">Textile &amp; Apparel</p>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-[#212121] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Footwear Division</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A pair of modern casual sneakers on a clean background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAywF3uy2iYyctXMMeqK5gCvzcRvegH0L24W2AUkQYH_ueaUdnH46NtnXTZaxivz3d-HD-VnPySGIBOsys0PkjwJczx4_O1qPuSocyu1_pNNhcjKX5_dnIERBxnTlQimKg-g1rR1lf6loNAxwM0R10MnfbQdPtWP8yaSPjQc22Q1fkvDYZ2iZYqHFsqyEAPV89TUTzornfMENJp1Wh85USRHCHFW0sNVQfh6r5CD0-PraTGUIMAJeKm6pC4PswqfLfayCgKgiqDR-VQ");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Casual Shoes</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Capacity: 5,000 pairs/day</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Rugged industrial safety boots with steel toes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-8c7ljNs9IBbLN0tLRLrS8iRkt31t9yF7APJcCwHxjvYHSLgOmpC6RwvS4_4Y__sZziAfieDUdvwllSNmjiuw37_JV5W1aBDT0Ue5iCeIHJADJsseJzv9CraN1PoaOx8M71LEGy4DQDJZ6ILeK8wFLBUu7Q2qwCcHY_wtC_3RRdQ4e7hW6iocTQoQ2m1cFLJBE3oz9JE2d__WPw8fuD7RbvEtAJ5532dSQvKRMha9_p9-45sBgZEbP4BEvXcf_8YOMz6rPdRV_82q");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Industrial Safety Boots</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Capacity: 2,500 pairs/day</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Elegant formal leather dress shoes for men" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0BotXUe09v_RKxWipBJToZPPLXZxFGlb0XLlyYA_OyQ6kHCxOP3ILb2F25ikgiWUfLuejvn9hGuu-BEuSfVOuQBhl2KaV7tnHrRQ3XY0WNC0LIFkMdMhUhNJBxcWV8tkCZbOdbJMUfvo7Fkf_FDJGe6cl8g8Q7BNYufgL3d-q371vPz1tWIStxlAro07mc3WJmTsf68HvAgUwYzkEfBLwJPOlU80__3WiTQ6KIzfaw6PEI13k1SJwmI-G5tF97RlTh1lKHuxBeULM");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Formal Leather Shoes</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Capacity: 3,000 pairs/day</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A collection of high-quality export-grade footwear" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbV4RVP0V6Fh5kj6wfe7Md8Vz_tVU5KWUJc8HLuxmA_l6O-OR5l73YBDqQ-Zmk5QrBa49Q2vC3lyIomUJUslrXDXHXPUE2sjmyEnjpixDX-ixLZi_0lI8PqQIrMjQYqrA8qCPrJ-VgnRwifJJU6QkjLjoDvDWRMB1T8-Rxjqe-phNt6a-AdIFAC1hzPfZpvCppgvNWWAcmkRsVZyizXKvHeobmRmqqWo9p1j5ZeLG90KJ4GFNyHpakBGS8lO8r_ObK_sIquMZKhqaV");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Export-Grade Footwear</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Capacity: 4,000 pairs/day</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-[#212121] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Sole &amp; Component Manufacturing</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Stacks of durable rubber soles for shoes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_ZH_zDIJCIAI-V8f6aub8viDMeMsndjJCtsJlXlivJ1ms58nGeXIFFgk-4bIwhmIAUJYBuJXUt6oKjdKn3rW1-OHZR9CS6Ih-lrtTQfUNENsJst1K770c9kv9QfegO4_eIq5LN4tJWtvOEE6NoCoae0Mw8mbLh0kRaVYntXJsZulfrFfVSGZlZB6bQ3RQ-l6FmyUiWHlBtbp7bxnzdPvujFYKTdeXHk_Hi6XyLpFDYT7QenJwurCVmDI_oYJOI8yp5Hdl1ul6Ql6T");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Rubber Soles</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">High-grip, long-lasting</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Lightweight and flexible polyurethane (PU) soles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo5YDPTKJYoiNhSDPprBlD2T-qORIYaTze1JQi0MbwXh_LvarpIv-lZrUlx3xNtrv-vNK6qu2SzJeq25LWVqwL0EQ72FcWni1rJmrkMNzUVMKPD9QySLHBF9chBDo3gqVYH2ocrCJm8plw1r_i3L--2bwsVhK7Xc_RpG6Z52ahKG2UY8EtjXdezoJT03JKZKRzmrVmn-6Ncraf28n5kBn4xghzRpqerypKpVJQRuQ0Am86E_AikY6gO0i04TwMetEMTtvV5tlEqzYJ");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Polyurethane (PU) Soles</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Comfort and flexibility</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Various precision injection molded plastic components" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuArGLef2hB7xWVCVn9wnOFJTy_lQUkY5AIdOCVLd_XABnmvy7s2ClviqmWAZmywxKzgssQ1DnyOeYHWk6VO4ItlGJEMHXoKv3GvsZZ3gQZTqqCKt0mIxG6NYYUo6r7zIlpAFs4fDyOOq58_1cH913Vb95ucjC4s_iu9yGYcrOW2CJtSbzMpyai2BdR55MQzyp4SfDYtdzlIWWoNUl0TKzQFX8xhi5klveVXl9uMerO9Px3lhWZVYvNvQA6rNSS1GCg3Mymdl3nkHmkp");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Injection Molded Components</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Custom specifications</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-[#212121] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Bus Assembly Division</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A modern electric city bus on a city street" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHuTS5UrnK6PeORHS0-lu0Sp5tRmw_6pNRBz-qYVQgZE8Dn238HsIanqvDAm_aabRYzxZZuBGuk8c9BNFB2A54P1Lq03s2BhEHVz7fC5lxEP7iUC1xjJ-rJCAjlz6zu-wTPAeQF0rLc19xHyqBzkIioBqzgPvMQqnTbEw6I-Kh9lOmxVYtGBidKBMcKP0J2fGdSMOHh8W6kh7b2dEQkQYpprmp_a8X0ZRDVdPm_YTbAn9WJTL-Q6MhxfeKzaJ1dBlPXJSdUm1UmNII");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Electric City Bus</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Zero-emission urban transit</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-<!DOCTYPE html>
+
+    <html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>News &amp; Updates - Gelila Manufacturing PLC</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script>
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  "primary": "#f97b06",
+                  "background-light": "#f8f7f5",
+                  "background-dark": "#23190f",
+                },
+                fontFamily: {
+                  "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+              },
+            },
+          }
+        </script>
+    <style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+            }
+        </style>
+    </head>
+    <body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+    <!-- TopNavBar Start -->
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-black/10 dark:border-b-white/10 px-4 sm:px-10 lg:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+    <div class="flex items-center gap-4 text-zinc-900 dark:text-zinc-100">
+    <div class="size-6 text-primary">
+    <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path>
+    <path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.8775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill-rule="evenodd"></path>
+    </svg>
+    </div>
+    <h2 class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]">Gelila Manufacturing PLC</h2>
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end gap-8">
+    <nav class="flex items-center gap-9 text-zinc-900 dark:text-zinc-100">
+    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Sectors</a>
+    <a class="text-sm font-bold leading-normal text-primary" href="#">News &amp; Updates</a>
+    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Careers</a>
+    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+    </nav>
+    <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+    <span class="truncate">Request a Quote</span>
+    </button>
+    </div>
+    <button class="lg:hidden text-zinc-900 dark:text-zinc-100">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+    </header>
+    <!-- TopNavBar End -->
+    <main class="px-4 sm:px-10 lg:px-20 py-10 lg:py-16 flex flex-1 justify-center">
+    <div class="layout-content-container flex flex-col w-full max-w-6xl">
+    <!-- PageHeading Start -->
+    <div class="flex flex-col items-center text-center gap-4 mb-10 lg:mb-12">
+    <h1 class="text-zinc-900 dark:text-zinc-100 text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">News &amp; Updates from Gelila</h1>
+    <p class="text-zinc-600 dark:text-zinc-400 text-base md:text-lg font-normal leading-normal max-w-2xl">Stay informed with the latest news, press releases, and corporate milestones from Gelila Manufacturing.</p>
+    </div>
+    <!-- PageHeading End -->
+    <!-- Chips Start -->
+    <div class="flex justify-center mb-10 lg:mb-12">
+    <div class="flex gap-2 p-1.5 bg-zinc-900/5 dark:bg-white/5 rounded-lg overflow-x-auto">
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 bg-primary text-white">
+    <p class="text-sm font-medium leading-normal">All</p>
+    </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+    <p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Press Releases</p>
+    </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+    <p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Company Milestones</p>
+    </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+    <p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Corporate Events</p>
+    </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+    <p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Industry Insights</p>
+    </button>
+    </div>
+    </div>
+    <!-- Chips End -->
+    <!-- ImageGrid Start -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Workers in a modern factory setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEKw5PLOp17z6w_G8asfm04adRSWpwofGfgQSrNOyw2Q4LF3SbhMs5yBBeYgVZNexmLs1NSQ3ioRHrmK1xFCEeUhl_2I2UeLF564a9vufreQKTIRcjaiN7-6BR0dWTJ2VICtIpobxH4KOTlK88YCaqffHhTtgVnjZW00ySfzlJ5c86iKBvHeLxTH89LUHfo1bPhbxMMUmeiaEiyeaHwEEwVkSa-Z4NFy7zkNcgnWDrotx4z0Bnw5R2tNOMoGtw5zMPR7PZ-ZsUfg9x");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Company Milestones</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Oct 26, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Gelila Manufacturing Announces Q3 Production Milestones</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">A detailed look into our record-breaking third quarter performance and what it means for the future.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Close up on green leaves, symbolizing sustainability" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZvCrWbxoMzHcjzaCYi-hlsIBy_RCsvhZywESILzhoQJeCxKFVZTx9Ol8VMHP2ol4ezh1-zeqjjQTct2FHpFJSVsnjv3EYWJFdUJ2BaTOyoTVNFxNLbsxRxyicziazwwv8eNnlovJ4wkM1EX2bkL5egXMegZyDZFfpYkOlBRa8hm5ikEKH-fUTsMsD57M30TVoXw8GzUZz_KGNK4YK7Wb8djzFexdKXFpa5ckiEpTrB9IKwCUfAsjqWTXFsHk1HUKc_5w6iKKn9qCY");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Press Releases</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Oct 15, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">New Partnership to Enhance Sustainable Practices</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">We're excited to partner with industry leaders to drive sustainability and eco-friendly manufacturing.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="A corporate event with people networking" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4wUayWeOJfZKQWKfcERvmogxp5Aovi-1jumQZa9q--bbmewHeeDpHjFv3sod8w6Hlpk6koBQARmK_HqWxHJRVk7o5bGhuMrfuUjjhTa1BPUAFDNNdPqcVjcfvk2gXkKsybg3QpxPBU1LSsWJGR2hxoE7J6PbjFY1PVGBRCDwy7GNDVLs9uVo_t_vRbZwyG7f7Z-kAkPFjYDS3EbpahQccrUIfMXJ_o3gA72AOWfWyZNfXNiMovJKmRUBaf3cS8D5AzB62v42ErE_L");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Corporate Events</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Sep 28, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Celebrating 25 Years of Industrial Excellence</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Reflecting on a quarter-century of growth, innovation, and commitment to our clients and community.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="CEO speaking at a podium during a summit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQJRljtcMJ1aoKr-abud1O3ab7p4LXD9jd5Zdd0ukNEd05qOIlvuI8o9ka1h4JLqxdFfl5nmFLrLpvpDUII2Rvx01jcA55iejXeJhGBhnkog4bQ5yZB0iN5dO5nW3u76xb4MF95ZZu7IeYi-7yjQD-r3vmujdGcgEyRUMkd3hBy5HIXlEhXSOvypa9lHP5bZJr7Vu9nnZqA5FsrsHss0WoHZFZkrXNkMW7bbJBl75aAYug3wiHTvny-A0qGZfOsnCkZ2rWAkjJnkUj");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Industry Insights</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Sep 12, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Our CEO Speaks at the Annual Manufacturing Summit</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Insights from our leadership on the future of manufacturing and digital transformation in the industry.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Construction site of a new industrial facility" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8gKmn2FeR70XKe5L_1W_Hqn20goyNai-n1QMrfnlSTOQqnNZbel0UHiXjMKBDXA21YNsD8qJhdIY7rPjXtCUJBQ4ZjYSC5fWQtV6ER9xWaoMXcbJuN0LnAVjB9UE22hFCn-IqL7iinIE1GzImdUY5xQ6yhK0_DCrnXyEgZ7IyR1GOQd_zpvvrkWRwNVFlvpOInggxMp6aPe7LM8Og0cFtFCEwfn8gDE0hZcYi08wJw8ZsCuOzsemC0C677ux7-mq6SyqU6SThp86Y");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Company Milestones</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Aug 25, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Groundbreaking on New State-of-the-Art Facility</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Construction has begun on our next-generation plant, set to increase capacity by 40% in 2025.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4 group cursor-pointer">
+    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="A person holding a trophy award" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-NNs1acupZZgtbi3PVljsmmpnn2oi_PsUkwY9TfPlTZT3SaYOQnhZAsPCTyuFLpwks3d3UvCqMjZ2Rp-Pw4I9oVku2BnWorcZkwYxDJikj4xkBwXZnUSPDlwXxi3LT7k62ONT4Vx_W7n87qf-84fxFdlOjRYT8sx3Z3ogr3GjuQiDCj5HmfNA_rs3XImG4qUvBVj4n-0Y2adYPhCVh_8CYG_mGV1pnudsQvs85BeQf-UH-5ZhjCme1pI0ANYzR4qTFoBjTGMXtAyz");'></div>
+    <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-3 text-sm">
+    <span class="text-primary font-semibold">Press Releases</span>
+    <span class="text-zinc-500 dark:text-zinc-400">Aug 03, 2023</span>
+    </div>
+    <h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Gelila PLC Receives Industry Award for Innovation</h3>
+    <p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">We are honored to be recognized for our pioneering work in automation and quality control systems.</p>
+    <a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+    </div>
+    </div>
+    </div>
+    <!-- ImageGrid End -->
+    <!-- Pagination Start -->
+    <div class="flex items-center justify-center p-4 mt-12">
+    <a class="flex size-10 items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100" href="#">
+    <span class="material-symbols-outlined">chevron_left</span>
+    </a>
+    <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded-full bg-primary" href="#">1</a>
+    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">2</a>
+    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">3</a>
+    <span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full">...</span>
+    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">10</a>
+    <a class="flex size-10 items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100" href="#">
+    <span class="material-symbols-outlined">chevron_right</span>
+    </a>
+    </div>
+    <!-- Pagination End -->
+    </div>
+    </main>
+    <!-- Footer Start -->
+    <footer class="bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="col-span-1 md:col-span-2 lg:col-span-1">
+    <div class="flex items-center gap-3 mb-4">
+    <div class="size-6 text-primary">
+    <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path><path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.8775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill-rule="evenodd"></path></svg>
+    </div>
+    <h2 class="text-zinc-900 dark:text-zinc-100 text-lg font-bold">Gelila Manufacturing PLC</h2>
+    </div>
+    <p class="text-sm">Excellence in every sector, built on a foundation of integrity and innovation.</p>
+    </div>
+    <div>
+    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Quick Links</h3>
+    <ul class="space-y-2 text-sm">
+    <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">Sectors</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Resources</h3>
+    <ul class="space-y-2 text-sm">
+    <li><a class="hover:text-primary transition-colors" href="#">News &amp; Updates</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Contact Us</h3>
+    <ul class="space-y-2 text-sm">
+    <li><a class="hover:text-primary transition-colors" href="#">info@gelilaplc.com</a></li>
+    <li><a class="hover:text-primary transition-colors" href="#">+1 (555) 123-4567</a></li>
+    <li><p>123 Industrial Way, Addis Ababa</p></li>
+    </ul>
+    </div>
+    </div>
+    <div class="mt-8 border-t border-zinc-300 dark:border-zinc-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+    <p>© 2023 Gelila Manufacturing PLC. All rights reserved.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+    <a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+    <a class="hover:text-primary transition-colors" href="#">Twitter</a>
+    <a class="hover:text-primary transition-colors" href="#">Facebook</a>
+    </div>
+    </div>
+    </div>
+    </footer>
+    <!-- Footer End -->
+    </div>
+    </div>
+    </body></html><!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>News &amp; Updates - Gelila Manufacturing PLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f97b06",
+              "background-light": "#f8f7f5",
+              "background-dark": "#23190f",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar Start -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-black/10 dark:border-b-white/10 px-4 sm:px-10 lg:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4 text-zinc-900 dark:text-zinc-100">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.8775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-zinc-900 dark:text-zinc-100 text-lg font-bold leading-tight tracking-[-0.015em]">Gelila Manufacturing PLC</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9 text-zinc-900 dark:text-zinc-100">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Sectors</a>
+<a class="text-sm font-bold leading-normal text-primary" href="#">News &amp; Updates</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Careers</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+<button class="lg:hidden text-zinc-900 dark:text-zinc-100">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<!-- TopNavBar End -->
+<main class="px-4 sm:px-10 lg:px-20 py-10 lg:py-16 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-6xl">
+<!-- PageHeading Start -->
+<div class="flex flex-col items-center text-center gap-4 mb-10 lg:mb-12">
+<h1 class="text-zinc-900 dark:text-zinc-100 text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">News &amp; Updates from Gelila</h1>
+<p class="text-zinc-600 dark:text-zinc-400 text-base md:text-lg font-normal leading-normal max-w-2xl">Stay informed with the latest news, press releases, and corporate milestones from Gelila Manufacturing.</p>
+</div>
+<!-- PageHeading End -->
+<!-- Chips Start -->
+<div class="flex justify-center mb-10 lg:mb-12">
+<div class="flex gap-2 p-1.5 bg-zinc-900/5 dark:bg-white/5 rounded-lg overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 bg-primary text-white">
+<p class="text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+<p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Press Releases</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+<p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Company Milestones</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+<p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Corporate Events</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md px-4 hover:bg-zinc-900/5 dark:hover:bg-white/5 transition-colors">
+<p class="text-zinc-900 dark:text-zinc-100 text-sm font-medium leading-normal">Industry Insights</p>
+</button>
+</div>
+</div>
+<!-- Chips End -->
+<!-- ImageGrid Start -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Workers in a modern factory setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEKw5PLOp17z6w_G8asfm04adRSWpwofGfgQSrNOyw2Q4LF3SbhMs5yBBeYgVZNexmLs1NSQ3ioRHrmK1xFCEeUhl_2I2UeLF564a9vufreQKTIRcjaiN7-6BR0dWTJ2VICtIpobxH4KOTlK88YCaqffHhTtgVnjZW00ySfzlJ5c86iKBvHeLxTH89LUHfo1bPhbxMMUmeiaEiyeaHwEEwVkSa-Z4NFy7zkNcgnWDrotx4z0Bnw5R2tNOMoGtw5zMPR7PZ-ZsUfg9x");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Company Milestones</span>
+<span class="text-zinc-500 dark:text-zinc-400">Oct 26, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Gelila Manufacturing Announces Q3 Production Milestones</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">A detailed look into our record-breaking third quarter performance and what it means for the future.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Close up on green leaves, symbolizing sustainability" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZvCrWbxoMzHcjzaCYi-hlsIBy_RCsvhZywESILzhoQJeCxKFVZTx9Ol8VMHP2ol4ezh1-zeqjjQTct2FHpFJSVsnjv3EYWJFdUJ2BaTOyoTVNFxNLbsxRxyicziazwwv8eNnlovJ4wkM1EX2bkL5egXMegZyDZFfpYkOlBRa8hm5ikEKH-fUTsMsD57M30TVoXw8GzUZz_KGNK4YK7Wb8djzFexdKXFpa5ckiEpTrB9IKwCUfAsjqWTXFsHk1HUKc_5w6iKKn9qCY");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Press Releases</span>
+<span class="text-zinc-500 dark:text-zinc-400">Oct 15, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">New Partnership to Enhance Sustainable Practices</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">We're excited to partner with industry leaders to drive sustainability and eco-friendly manufacturing.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="A corporate event with people networking" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4wUayWeOJfZKQWKfcERvmogxp5Aovi-1jumQZa9q--bbmewHeeDpHjFv3sod8w6Hlpk6koBQARmK_HqWxHJRVk7o5bGhuMrfuUjjhTa1BPUAFDNNdPqcVjcfvk2gXkKsybg3QpxPBU1LSsWJGR2hxoE7J6PbjFY1PVGBRCDwy7GNDVLs9uVo_t_vRbZwyG7f7Z-kAkPFjYDS3EbpahQccrUIfMXJ_o3gA72AOWfWyZNfXNiMovJKmRUBaf3cS8D5AzB62v42ErE_L");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Corporate Events</span>
+<span class="text-zinc-500 dark:text-zinc-400">Sep 28, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Celebrating 25 Years of Industrial Excellence</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Reflecting on a quarter-century of growth, innovation, and commitment to our clients and community.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="CEO speaking at a podium during a summit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQJRljtcMJ1aoKr-abud1O3ab7p4LXD9jd5Zdd0ukNEd05qOIlvuI8o9ka1h4JLqxdFfl5nmFLrLpvpDUII2Rvx01jcA55iejXeJhGBhnkog4bQ5yZB0iN5dO5nW3u76xb4MF95ZZu7IeYi-7yjQD-r3vmujdGcgEyRUMkd3hBy5HIXlEhXSOvypa9lHP5bZJr7Vu9nnZqA5FsrsHss0WoHZFZkrXNkMW7bbJBl75aAYug3wiHTvny-A0qGZfOsnCkZ2rWAkjJnkUj");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Industry Insights</span>
+<span class="text-zinc-500 dark:text-zinc-400">Sep 12, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Our CEO Speaks at the Annual Manufacturing Summit</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Insights from our leadership on the future of manufacturing and digital transformation in the industry.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="Construction site of a new industrial facility" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8gKmn2FeR70XKe5L_1W_Hqn20goyNai-n1QMrfnlSTOQqnNZbel0UHiXjMKBDXA21YNsD8qJhdIY7rPjXtCUJBQ4ZjYSC5fWQtV6ER9xWaoMXcbJuN0LnAVjB9UE22hFCn-IqL7iinIE1GzImdUY5xQ6yhK0_DCrnXyEgZ7IyR1GOQd_zpvvrkWRwNVFlvpOInggxMp6aPe7LM8Og0cFtFCEwfn8gDE0hZcYi08wJw8ZsCuOzsemC0C677ux7-mq6SyqU6SThp86Y");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Company Milestones</span>
+<span class="text-zinc-500 dark:text-zinc-400">Aug 25, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Groundbreaking on New State-of-the-Art Facility</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">Construction has begun on our next-generation plant, set to increase capacity by 40% in 2025.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105" data-alt="A person holding a trophy award" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-NNs1acupZZgtbi3PVljsmmpnn2oi_PsUkwY9TfPlTZT3SaYOQnhZAsPCTyuFLpwks3d3UvCqMjZ2Rp-Pw4I9oVku2BnWorcZkwYxDJikj4xkBwXZnUSPDlwXxi3LT7k62ONT4Vx_W7n87qf-84fxFdlOjRYT8sx3Z3ogr3GjuQiDCj5HmfNA_rs3XImG4qUvBVj4n-0Y2adYPhCVh_8CYG_mGV1pnudsQvs85BeQf-UH-5ZhjCme1pI0ANYzR4qTFoBjTGMXtAyz");'></div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 text-sm">
+<span class="text-primary font-semibold">Press Releases</span>
+<span class="text-zinc-500 dark:text-zinc-400">Aug 03, 2023</span>
+</div>
+<h3 class="text-zinc-900 dark:text-zinc-100 text-xl font-bold leading-normal group-hover:text-primary transition-colors">Gelila PLC Receives Industry Award for Innovation</h3>
+<p class="text-zinc-600 dark:text-zinc-400 text-sm font-normal leading-normal">We are honored to be recognized for our pioneering work in automation and quality control systems.</p>
+<a class="text-primary text-sm font-bold mt-2 inline-flex items-center gap-1" href="#">Read More <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- ImageGrid End -->
+<!-- Pagination Start -->
+<div class="flex items-center justify-center p-4 mt-12">
+<a class="flex size-10 items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded-full bg-primary" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full">...</span>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-zinc-900 dark:text-zinc-100 rounded-full hover:bg-zinc-900/10 dark:hover:bg-white/10" href="#">10</a>
+<a class="flex size-10 items-center justify-center text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<!-- Pagination End -->
+</div>
+</main>
+<!-- Footer Start -->
+<footer class="bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400">
+<div class="max-w-7xl mx-auto px-4 sm:px-10 lg:px-20 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3 mb-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path><path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.8775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill-rule="evenodd"></path></svg>
+</div>
+<h2 class="text-zinc-900 dark:text-zinc-100 text-lg font-bold">Gelila Manufacturing PLC</h2>
+</div>
+<p class="text-sm">Excellence in every sector, built on a foundation of integrity and innovation.</p>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Quick Links</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sectors</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Resources</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">News &amp; Updates</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-zinc-100 mb-4">Contact Us</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">info@gelilaplc.com</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">+1 (555) 123-4567</a></li>
+<li><p>123 Industrial Way, Addis Ababa</p></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-zinc-300 dark:border-zinc-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+<p>© 2023 Gelila Manufacturing PLC. All rights reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="#">Facebook</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+</div>
+</div>
+</body></html>4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A large diesel inter-city coach on a highway" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCKbwzb4S0gs86Jmzzof2H9BJJ-2jcKQy52YUxozQaiUX4aOMyMIKIGGbfF0zYRMSaKcVjnszSESkwkxnNoUKvWfroyMkBcKsC_Rrrv9Sk-pX_9gXScAJGXrzh8FMXUsBwMkWsIMjZOliU8plZml9B3PTN8q20Hv1Ksi6EHu8BBBY1DBy_NG1kW2HE43mYAWRraJomC6A7odoBO1GOzes8_yExun1KjaK6yHDHe-3GAGhdFbnsxXtQxIHYvth-SXPrDv_ikb-a36kN");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Diesel Inter-City Coach</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Long-distance comfort</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+<div class="flex flex-col gap-4 p-4 border border-gray-200 dark:border-gray-800 rounded-xl bg-background-light dark:bg-gray-900/50 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A futuristic hydrogen-powered bus at a charging station" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfy-13eAG6fSLmWmJ2NWW-f02II6cFvBqmFlZTL2s2hWj0w4DdR1IWDGGWi2NPBwfN3NONNA3gNKlDj-ifgraDt_wDbKP0VNmZBcVH_AJ-ye5BOSZxIyFIBkkpC4EuNZ5G9x9N301mM7noa9dhKM2MRbHYj6B4wYaQGwcRdsjI6AKDdB-gDCHuTJtyh1j2Y3JgNsDXeFYQzpOzKYDRwf6JPnY6RN9S_CZ6xhAZaFzwmQu-Sg9UAOM4_TlSrAtrT6sapUyWNe24DDtB");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-[#212121] dark:text-white text-base font-semibold leading-normal">Hydrogen-Powered Bus</p>
+<p class="text-[#424242] dark:text-gray-400 text-sm font-normal leading-normal mt-1">Next-gen clean energy</p>
+</div>
+<button class="mt-auto w-full flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal">Inquiry</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

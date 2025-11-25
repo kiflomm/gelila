@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gelila Manufacturing PLC - Engineering Ethiopia's Industrial Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f97b06",
+            "background-light": "#f8f7f5",
+            "background-dark": "#23190f",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181411] dark:text-background-light">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-7xl flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-6 lg:px-10 py-4 w-full fixed top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-[#181411] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#181411] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Gelila Manufacturing PLC</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#181411] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Investors</a>
+<a class="text-[#181411] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Request Quote</span>
+</button>
+</div>
+<button class="lg:hidden text-[#181411] dark:text-white">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</header>
+<main class="pt-20">
+<!-- HeroSection -->
+<div class="px-4 sm:px-6 lg:px-10 py-5">
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-6 pb-10 @[480px]:px-10 @[960px]:px-16 @[960px]:pb-16" data-alt="A wide-angle shot of a modern, clean factory floor with automated machinery and production lines in motion." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4i7laV2i-QVdbRf3idJagNz-tdiqPs5ymwV2wqvww1kUCGhUGeT3OWu-Kf0x8TQx2_6iJN7JMMCk2mFgPEJgxI6vTeyCqMAy17gOpaNPej9g8O6_fDs5dZ9_91B0VcpfhgXEHQJ87Gmbd9Vcv_uCh4u1ZLs5v1mLxoSHz-gPMAWU8yorGESPBohvA06K3XJ2iW9giI3W5-i0OnfbsAmtC-vBUyuahx69RMLdGJwNJrn-bhzrLraf-uJNJ8QsfxM8bT21hCdEdTGMM");'>
+<div class="flex flex-col gap-4 text-left max-w-3xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl">
+                        Engineering Ethiopia's Industrial Future
+                      </h1>
+<h2 class="text-white/90 text-base font-normal leading-normal @[480px]:text-lg">
+                        Powering progress across key sectors with innovative manufacturing solutions and a commitment to national growth.
+                      </h2>
+</div>
+<div class="flex-wrap gap-3 flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Request Quote</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-background-light text-[#181411] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-opacity">
+<span class="truncate">Become a Supplier</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-transparent border border-white text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-white/10 transition-colors">
+<span class="truncate">Export Inquiries</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Portfolio Section -->
+<section class="py-10 sm:py-16">
+<h2 class="text-[#181411] dark:text-white text-3xl font-bold leading-tight tracking-tight px-4 sm:px-6 lg:px-10 pb-8 text-center">Our Diverse Portfolio</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 px-4 sm:px-6 lg:px-10">
+<div class="group flex flex-col gap-3 rounded-xl border border-primary/20 bg-white dark:bg-black/20 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Stylish leather shoes being stitched on a production line." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCunK55Dy_mEJRUYxiUouX9-8a2_3EUBp4OCZOqFGS_uY9jgPMX8fomKkxlJVJ0fmFWecsh0P5Lj2Ka_ZixwCbys08VHjoIOJ3bE4N8NKIiPSbIfsGUJSLlJYM2aUiJ5kIAC466LsuzI1F1Ijamy0ESuej2550evf9JlhuvYBCxym5RfACNUHoLYEhAfFYgegis-4VZgfr8upIkmmLH1nPM7oQ6CCc-mNMagJso8Q_mwnWDXuDjx8bTjAyLQQSredlTGQU_4vm18yOP");'></div>
+<div>
+<p class="text-[#181411] dark:text-white text-lg font-semibold leading-normal">Shoes &amp; Sole</p>
+<p class="text-[#8c755f] dark:text-white/70 text-sm font-normal leading-normal">Crafting quality footwear from sole to finish.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-xl border border-primary/20 bg-white dark:bg-black/20 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Freshly baked bread on a conveyor belt in a large food processing facility." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHjsCKhyjvBodUWqaEoUxhoHbbY2XqyN4-OakIjLSSNhukfNlGQYYXSNKNDD7pGHD_5tKDHpva46EkPqp8B-HANc6_IcjVkQc4Jfv1t2bCsT3ix_NF21fZtMsfWngK9U6Oe6b3staGZHq-rRLqMxCE0VbYzmCVeSTTjDmRHV7OWzy1jRz897Br2Ebc9SUz_wFJreDtlfl_DNFGfSuBvYQOoqAKPgO082GnGjqw1B9GHaNKwWpJA86YtEXXcG85MRGUi5myDRVy9RMm");'></div>
+<div>
+<p class="text-[#181411] dark:text-white text-lg font-semibold leading-normal">Food Complex</p>
+<p class="text-[#8c755f] dark:text-white/70 text-sm font-normal leading-normal">Nourishing the nation with high-standard food products.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-xl border border-primary/20 bg-white dark:bg-black/20 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A modern city bus being assembled in a bright, clean factory." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDK-3SXrYMfOrKvO4qmo-7-ub_xmZnO1Qf40VFgNaf8TWAGWXudUfTSsqDJ4U34YnfZXYhXbugz4c4oq5JJ2r0KTIx633uUS0yqNAVaBo3Bp2d7gGIsPlKU5hmWBK5hciwXGy92I1k9243rRm3qraPw8GInyPnH2TkfadXVSZVZS8xB7sUOH7wTIdloqPcFMY4akyt51uffljK96-bsKooVwdLFCEEBazjAV40MFUY5wpONJDXUg5UIWNluG2kZel4NATVjgSbGLXCN");'></div>
+<div>
+<p class="text-[#181411] dark:text-white text-lg font-semibold leading-normal">Bus Assembly</p>
+<p class="text-[#8c755f] dark:text-white/70 text-sm font-normal leading-normal">Assembling reliable and efficient transportation.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-xl border border-primary/20 bg-white dark:bg-black/20 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Large spools of colorful thread in an industrial textile mill." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_qa4L0bGqSQV0EiNaD7ue7HqpptaC6ZO3jm3ZGCu1U6VbJ1ncSfuK7bW-AjUYtrYsCKyzhiswu4YgC_-a2BdQyNMgGxrLabXZ_XauKuq7YDqcTkxteOix8JU7WQYt8nIbJ7a56k-gtllsA19Jzky6MuvoloGT3le77G76YOqhaZnUjW_4QWfuMuGVyHye4wNYWJzmNWlrdc8Hqs0acJ6nZZjK5LElJjOTb9HX9lnEIs9BzV8mqATCEF__dpvtyxNrxZFdM9DP1zRV");'></div>
+<div>
+<p class="text-[#181411] dark:text-white text-lg font-semibold leading-normal">Textile &amp; Apparel</p>
+<p class="text-[#8c755f] dark:text-white/70 text-sm font-normal leading-normal">Weaving excellence into every thread and garment.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-3 rounded-xl border border-primary/20 bg-white dark:bg-black/20 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="A fleet of city buses parked neatly in a depot at sunrise." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlGVsRARnmst89JYsvTInO7pA8lE8nwi-n7AlBzZ7wS2MRUH_pv3s88b5n9H7HPWf3lm3hSZCPZpIlY5C-lIXfzZcoIz8EC8H6u0MyNNHnyGfWct9zNTm-Tljm-sgxVKOpt981kg4qGGN-p1Cd-YTAx-5JF5uMNcUNI5s7I5jCnkH1BxJD0c4UEJNLM7s5NODx8fznVbVZUXsbOinzpznuumWZyeCW6AQmBqSR8DUFjbqK7VUzrPPoCNFu2C0lTqs8MIb3qdmYW8SP");'></div>
+<div>
+<p class="text-[#181411] dark:text-white text-lg font-semibold leading-normal">Public Transport</p>
+<p class="text-[#8c755f] dark:text-white/70 text-sm font-normal leading-normal">Connecting communities with dependable transit solutions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements & Trust Section -->
+<section class="py-10 sm:py-16 px-4 sm:px-6 lg:px-10">
+<h2 class="text-[#181411] dark:text-white text-3xl font-bold leading-tight tracking-tight pb-8 text-center">Industrial Milestones &amp; Achievements</h2>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+<!-- Timeline Component -->
+<div class="lg:col-span-2">
+<div class="relative pl-8 border-l-2 border-primary/30">
+<!-- Milestone 1 -->
+<div class="mb-10 ml-4">
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-2.5 border border-background-light dark:border-background-dark"></div>
+<time class="mb-1 text-sm font-normal leading-none text-[#8c755f] dark:text-white/60">1998</time>
+<h3 class="text-lg font-semibold text-[#181411] dark:text-white">Company Founded</h3>
+<p class="text-base font-normal text-[#495057] dark:text-white/80">Gelila Manufacturing PLC was established with a vision to catalyze industrial growth in Ethiopia.</p>
+</div>
+<!-- Milestone 2 -->
+<div class="mb-10 ml-4">
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-2.5 border border-background-light dark:border-background-dark"></div>
+<time class="mb-1 text-sm font-normal leading-none text-[#8c755f] dark:text-white/60">2005</time>
+<h3 class="text-lg font-semibold text-[#181411] dark:text-white">First Bus Assembled</h3>
+<p class="text-base font-normal text-[#495057] dark:text-white/80">A landmark achievement, rolling out the first locally assembled bus, transforming public transport.</p>
+</div>
+<!-- Milestone 3 -->
+<div class="ml-4">
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-2.5 border border-background-light dark:border-background-dark"></div>
+<time class="mb-1 text-sm font-normal leading-none text-[#8c755f] dark:text-white/60">2020</time>
+<h3 class="text-lg font-semibold text-[#181411] dark:text-white">ISO 9001 Certification</h3>
+<p class="text-base font-normal text-[#495057] dark:text-white/80">Achieved international quality management standards, underscoring our commitment to excellence.</p>
+</div>
+</div>
+</div>
+<!-- Investment & Certifications -->
+<div class="flex flex-col gap-6 bg-white dark:bg-black/20 p-6 rounded-xl border border-primary/20">
+<h3 class="text-xl font-bold text-[#181411] dark:text-white">Key Highlights</h3>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl mt-1" data-icon="insights">insights</span>
+<div>
+<p class="text-2xl font-bold text-primary">$50M+</p>
+<p class="text-sm text-[#495057] dark:text-white/80">Invested in Technology</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl mt-1" data-icon="groups">groups</span>
+<div>
+<p class="text-2xl font-bold text-primary">5,000+</p>
+<p class="text-sm text-[#495057] dark:text-white/80">Jobs Created</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl mt-1" data-icon="verified">verified</span>
+<div>
+<p class="text-lg font-semibold text-[#181411] dark:text-white">Certifications</p>
+<p class="text-sm text-[#495057] dark:text-white/80">ISO 9001, Fair Trade</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#181411] dark:bg-black text-white mt-16">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-10">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Gelila Manufacturing PLC</h2>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-white tracking-wider uppercase">Sectors</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Shoes &amp; Sole</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Food Complex</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Bus Assembly</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-white tracking-wider uppercase">.</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Textile &amp; Apparel</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Public Transport</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-white tracking-wider uppercase">Company</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-base text-gray-300 hover:text-white" href="#">About Us</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Investors</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold text-white tracking-wider uppercase">Contact</h3>
+<ul class="mt-4 space-y-2">
+<li><span class="text-base text-gray-300">Addis Ababa, Ethiopia</span></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="mailto:info@gelilaplc.com">info@gelilaplc.com</a></li>
+<li><a class="text-base text-gray-300 hover:text-white" href="tel:+251111223344">+251 111 223 344</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-700 pt-8 flex flex-col sm:flex-row items-center justify-between">
+<p class="text-base text-gray-400">© 2024 Gelila Manufacturing PLC. All rights reserved.</p>
+<div class="flex space-x-6 mt-4 sm:mt-0">
+<!-- Social Media Icons would go here -->
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
